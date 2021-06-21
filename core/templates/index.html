@@ -12,25 +12,25 @@
     <h2>{{ curso }}</h2>
     <p>{{ outro }}</p>
 
-<!--        <table>-->
-<!--        <thead>-->
-<!--            <tr>-->
-<!--                <th>Produto</th>-->
-<!--                <th>Preço</th>-->
+        <table>
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Preço</th>
 
-<!--            </tr>-->
-<!--        </thead>-->
-<!--        <tbody>-->
+            </tr>
+        </thead>
+        <tbody>
             {% for produto in produtos %}
-<!--                <tr>-->
-                    <a href="{% url 'produto' produto.id %}">{{ produto.nome }}</a> </td>
-                    <p>{{ produto.preco }}</p>
+                <tr>
+                    <td><a href="{% url 'produto' produto.id %}">{{ produto.nome }}</a> </td>
+                    <td>{{ produto.preco }}</td>
 
-<!--                </tr>-->
+                </tr>
 
             {% endfor%}
-<!--        </tbody>-->
-<!--    </table>-->
+        </tbody>
+    </table>
 
 
     <button onclick="teste();">Clique-me</button>
